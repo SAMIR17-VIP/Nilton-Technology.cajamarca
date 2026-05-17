@@ -1,0 +1,8 @@
+{
+  "name": "Nilton Technology",
+  "description": "Servicio técnico especializado, instalación de software y soporte técnico profesional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

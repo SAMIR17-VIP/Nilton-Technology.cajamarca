@@ -1,0 +1,1 @@
+Para usar tus propias imágenes, guarda tus archivos aquí (ej: hero-bg.jpg) y luego actualiza las rutas en el código.
