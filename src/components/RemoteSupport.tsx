@@ -1,11 +1,11 @@
 import { motion } from "motion/react";
-import { Download, Wifi, MonitorSmartphone, Sparkles, CheckCircle2 } from "lucide-react";
+import { Download } from "lucide-react";
 
 const REMOTE_TOOLS = [
   {
     name: "AnyDesk",
     icon: "🌐",
-    img: "/images/remote/anydesk.png",
+    img: `${import.meta.env.BASE_URL}images/remote/anydesk.png`,
     url: "https://download.anydesk.com/AnyDesk.exe",
     tag: "Recomendado",
     desc: "Conexión ultrarrápida con baja latencia. El más usado por nuestros técnicos.",
@@ -18,7 +18,7 @@ const REMOTE_TOOLS = [
   {
     name: "TeamViewer",
     icon: "🖥️",
-    img: "/images/remote/teamviewer.png",
+    img: `${import.meta.env.BASE_URL}images/remote/teamviewer.png`,
     url: "https://download.teamviewer.com/download/TeamViewer_Setup.exe",
     tag: "Clásico",
     desc: "Herramienta profesional con soporte multiplataforma y conexión estable.",
@@ -31,7 +31,7 @@ const REMOTE_TOOLS = [
   {
     name: "RustDesk",
     icon: "🦀",
-    img: "/images/remote/rustdesk.png",
+    img: `${import.meta.env.BASE_URL}images/remote/rustdesk.png`,
     url: "https://rustdesk.com/download",
     tag: "Open Source",
     desc: "Alternativa segura y de código abierto. Privacidad total garantizada.",
