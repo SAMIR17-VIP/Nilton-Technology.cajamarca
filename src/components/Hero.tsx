@@ -148,7 +148,7 @@ export function Hero() {
       {/* ── Background ── */}
       <div className="absolute inset-0 z-0" style={{ background: "#030712" }}>
         <img
-          src={`${import.meta.env.BASE_URL}images/publicimageshero-bg.jpg`}
+          src={`${import.meta.env.BASE_URL}images/hero-bg.jpg`}
           alt="Technical Remote Support"
           className="w-full h-full object-cover mix-blend-luminosity scale-110"
           style={{ opacity: 0.18 }}
