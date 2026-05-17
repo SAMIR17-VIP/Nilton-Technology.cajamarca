@@ -1,15 +1,15 @@
 import { motion } from "motion/react";
 
 const ENG_SOFTWARE = [
-  { name: "AutoCAD", icon: "📐", img: "images/software/autocad.png" },
-  { name: "Revit", icon: "🏛️", img: "images/software/revit.png" },
-  { name: "Civil 3D", icon: "🛣️", img: "images/software/civil3d.png" },
-  { name: "ETABS", icon: "🏗️", img: "images/software/etabs.png" },
-  { name: "SAP2000", icon: "⚙️", img: "images/software/sap2000.png" },
-  { name: "SketchUp", icon: "🏘️", img: "images/software/sketchup.png" },
-  { name: "3ds Max", icon: "🎭", img: "images/software/3dsmax.png" },
-  { name: "Inventor", icon: "🔩", img: "images/software/inventor.png" },
-  { name: "Maya", icon: "🎬", img: "images/software/maya.png" },
+  { name: "AutoCAD", icon: "📐", img: `${import.meta.env.BASE_URL}images/software/autocad.png` },
+  { name: "Revit", icon: "🏛️", img: `${import.meta.env.BASE_URL}images/software/revit.png` },
+  { name: "Civil 3D", icon: "🛣️", img: `${import.meta.env.BASE_URL}images/software/civil3d.png` },
+  { name: "ETABS", icon: "🏗️", img: `${import.meta.env.BASE_URL}images/software/etabs.png` },
+  { name: "SAP2000", icon: "⚙️", img: `${import.meta.env.BASE_URL}images/software/sap2000.png` },
+  { name: "SketchUp", icon: "🏘️", img: `${import.meta.env.BASE_URL}images/software/sketchup.png` },
+  { name: "3ds Max", icon: "🎭", img: `${import.meta.env.BASE_URL}images/software/3dsmax.png` },
+  { name: "Inventor", icon: "🔩", img: `${import.meta.env.BASE_URL}images/software/inventor.png` },
+  { name: "Maya", icon: "🎬", img: `${import.meta.env.BASE_URL}images/software/maya.png` },
 ];
 
 export function EngineeringSection() {
