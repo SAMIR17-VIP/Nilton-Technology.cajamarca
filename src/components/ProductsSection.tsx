@@ -9,7 +9,7 @@ const LICENSES = [
     subtitle: "Licencia Digital Permanente OEM / Retail",
     badge: "Permanente",
     icon: "🪟",
-    img: "/images/products/windows_license.png",
+    img: "images/products/windows_license.png",
     accent: "from-blue-500/20 to-cyan-500/10",
     border: "border-blue-500/20",
   },
@@ -18,17 +18,17 @@ const LICENSES = [
     subtitle: "Cuentas institucionales y licencias de por vida",
     badge: "Vitalicia",
     icon: "📊",
-    img: "/images/products/office_license.png",
+    img: "images/products/office_license.png",
     accent: "from-orange-500/20 to-red-500/10",
     border: "border-orange-500/20",
   },
 ];
 
 const HARDWARE = [
-  { title: "Laptops",    icon: Laptop,   img: "/images/products/laptop.png"   },
-  { title: "PCs Gamer",  icon: Gamepad2, img: "/images/products/gamer_pc.png" },
-  { title: "SSD / RAM",  icon: Cpu,      img: "/images/products/hardware.png" },
-  { title: "Monitores",  icon: Monitor,  img: "/images/products/monitor.png"  },
+  { title: "Laptops",    icon: Laptop,   img: "images/products/laptop.png"   },
+  { title: "PCs Gamer",  icon: Gamepad2, img: "images/products/gamer_pc.png" },
+  { title: "SSD / RAM",  icon: Cpu,      img: "images/products/hardware.png" },
+  { title: "Monitores",  icon: Monitor,  img: "images/products/monitor.png"  },
 ];
 
 // ── Section ──────────────────────────────────────────────────────────────────
@@ -148,9 +148,10 @@ function LicenseCard({
             alt={title}
             className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 drop-shadow-lg"
             onError={(e) => {
-              e.currentTarget.style.display = "none";
-              const fb = e.currentTarget.nextElementSibling as HTMLElement;
-              if (fb) fb.classList.remove("hidden");
+              const target = e.currentTarget;
+              target.style.display = 'none';
+              const next = target.nextElementSibling as HTMLElement;
+              if (next) next.classList.remove('hidden');
             }}
           />
           <span className="text-5xl hidden leading-none">{icon}</span>
@@ -166,7 +167,9 @@ function LicenseCard({
           <h4 className="text-lg font-black text-white group-hover:text-primary transition-colors leading-tight mb-1">
             {title}
           </h4>
-          <p className="text-sm text-on-surface/50 leading-snug">{subtitle}</p>
+          <div className="truncate">
+             <p className="text-sm text-on-surface/50 leading-snug truncate">{subtitle}</p>
+          </div>
         </div>
 
         {/* Arrow */}
@@ -194,9 +197,10 @@ function HardwareCard({
             alt={title}
             className="w-full h-full object-contain drop-shadow-lg"
             onError={(e) => {
-              e.currentTarget.style.display = "none";
-              const fb = e.currentTarget.nextElementSibling as HTMLElement;
-              if (fb) fb.classList.remove("hidden");
+              const target = e.currentTarget;
+              target.style.display = 'none';
+              const next = target.nextElementSibling as HTMLElement;
+              if (next) next.classList.remove('hidden');
             }}
           />
           <Icon className="w-12 h-12 text-primary hidden" />
