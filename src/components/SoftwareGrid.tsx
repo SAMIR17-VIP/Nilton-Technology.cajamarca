@@ -8,7 +8,7 @@ const SOFTWARE_SERVICES = [
     title: "Microsoft Office",
     description: "Versiones 2019, 2021, LTSC y Microsoft 365 con activación permanente.",
     icon: Monitor,
-    img: "/images/services/office.png",
+    img: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&fit=crop&q=80&w=200",
     fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/2203px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png",
     color: "from-orange-500/20 to-red-500/5",
     border: "hover:border-orange-500/40",
@@ -20,7 +20,7 @@ const SOFTWARE_SERVICES = [
     title: "Windows OS",
     description: "Instalación y optimización de Windows 10 y 11 Pro/Home.",
     icon: Settings,
-    img: "/images/services/windows.png",
+    img: "https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?auto=format&fit=crop&q=80&w=200",
     fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/2048px-Windows_logo_-_2012.svg.png",
     color: "from-blue-500/20 to-cyan-500/5",
     border: "hover:border-blue-500/40",
@@ -32,8 +32,8 @@ const SOFTWARE_SERVICES = [
     title: "Drivers & Pack",
     description: "Actualización de controladores para máximo rendimiento del hardware.",
     icon: Cpu,
-    img: "/images/services/drivers.png",
-    fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Drivers.svg/240px-Drivers.svg.png",
+    img: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=200",
+    fallbackImg: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=200",
     color: "from-slate-500/20 to-zinc-500/5",
     border: "hover:border-slate-500/40",
     glow: "bg-slate-500/25",
@@ -44,8 +44,8 @@ const SOFTWARE_SERVICES = [
     title: "Activaciones",
     description: "Activación de software y sistemas operativos mediante licencia digital.",
     icon: Key,
-    img: "/images/services/activations.png",
-    fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Key-crypto.svg/240px-Key-crypto.svg.png",
+    img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=200",
+    fallbackImg: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=200",
     color: "from-yellow-500/20 to-amber-500/5",
     border: "hover:border-yellow-500/40",
     glow: "bg-yellow-500/25",
@@ -56,8 +56,8 @@ const SOFTWARE_SERVICES = [
     title: "Optimización",
     description: "Aceleración de inicio, limpieza de temporales y mejora de procesos.",
     icon: Wrench,
-    img: "/images/services/optimization.png",
-    fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/240px-NewTux.svg.png",
+    img: "https://images.unsplash.com/photo-1516245834210-c4c142787335?auto=format&fit=crop&q=80&w=200",
+    fallbackImg: "https://images.unsplash.com/photo-1516245834210-c4c142787335?auto=format&fit=crop&q=80&w=200",
     color: "from-green-500/20 to-emerald-500/5",
     border: "hover:border-green-500/40",
     glow: "bg-green-500/25",
@@ -68,7 +68,7 @@ const SOFTWARE_SERVICES = [
     title: "Software Ingeniería",
     description: "AutoCAD, Revit, Civil 3D y suites completas de cálculo estructural.",
     icon: Layers,
-    img: "/images/services/engineering.png",
+    img: "https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=200",
     fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/AutoCAD_2023_logo.svg/2560px-AutoCAD_2023_logo.svg.png",
     color: "from-red-600/20 to-rose-500/5",
     border: "hover:border-red-600/40",
@@ -80,7 +80,7 @@ const SOFTWARE_SERVICES = [
     title: "Software Diseño",
     description: "Adobe Creative Cloud, CorelDRAW y herramientas de edición profesional.",
     icon: PenTool,
-    img: "/images/services/design.png",
+    img: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=200",
     fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Adobe_Systems_logo_and_wordmark.svg/2560px-Adobe_Systems_logo_and_wordmark.svg.png",
     color: "from-red-500/20 to-pink-500/5",
     border: "hover:border-red-500/40",
@@ -92,7 +92,7 @@ const SOFTWARE_SERVICES = [
     title: "Soporte Remoto",
     description: "Asistencia técnica inmediata vía AnyDesk para cualquier solución.",
     icon: ShieldCheck,
-    img: "/images/services/remote.png",
+    img: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=200",
     fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/AnyDesk_Logo_2020.svg/2560px-AnyDesk_Logo_2020.svg.png",
     color: "from-violet-500/20 to-purple-500/5",
     border: "hover:border-violet-500/40",
@@ -109,7 +109,7 @@ export function SoftwareGrid() {
     <section id="servicios" className="py-28 container mx-auto px-6 relative">
 
       {/* Ambient glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/6 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/5 blur-[140px] rounded-full pointer-events-none" />
 
       {/* ── Header ── */}
       <motion.div
@@ -197,13 +197,8 @@ function SoftwareCard({ title, description, icon: Icon, img, fallbackImg, index,
               alt={title}
               className="w-full h-full object-contain drop-shadow-lg"
               onError={(e) => {
-                // Try local first, then fallback to wikimedia
                 if (e.currentTarget.src !== fallbackImg) {
                   e.currentTarget.src = fallbackImg;
-                } else {
-                  e.currentTarget.style.display = "none";
-                  const fb = e.currentTarget.nextElementSibling as HTMLElement;
-                  if (fb) fb.classList.remove("hidden");
                 }
               }}
             />
