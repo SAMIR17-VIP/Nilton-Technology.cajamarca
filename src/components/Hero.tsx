@@ -148,10 +148,11 @@ export function Hero() {
       {/* ── Background ── */}
       <div className="absolute inset-0 z-0" style={{ background: "#030712" }}>
         <img
-          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80"
+          src={`${import.meta.env.BASE_URL}images/publicimageshero-bg.jpg`}
           alt="Technical Remote Support"
           className="w-full h-full object-cover mix-blend-luminosity scale-110"
           style={{ opacity: 0.18 }}
+          onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80"; }}
         />
 
         {/* Grid */}
