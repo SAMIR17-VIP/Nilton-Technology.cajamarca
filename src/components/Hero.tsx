@@ -22,7 +22,7 @@ const PARTICLES = Array.from({ length: 22 }, (_, i) => ({
 }));
 
 /* ── Glitch text ── */
-function GlitchText({ children, className }: { children: string; className?: string }) {
+export function GlitchText({ children, className }: { children: string; className?: string }) {
   const [glitch, setGlitch] = useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -132,7 +132,6 @@ export function Hero() {
     >
       {/* ── Keyframe styles ── */}
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=Playfair+Display:wght@700;900&display=swap');
         @keyframes gradient-x {
           0%,100% { background-position: 0% 50%; }
           50%      { background-position: 100% 50%; }
@@ -142,9 +141,6 @@ export function Hero() {
           50%  { opacity: 0.08; }
           100% { transform: translateY(100vh); opacity: 0.04; }
         }
-        @keyframes border-spin {
-          to { --angle: 360deg; }
-        }
         .animate-gradient-x { background-size: 200% 200%; animation: gradient-x 4s ease infinite; }
         .scanline { animation: scan 6s linear infinite; }
       `}</style>
@@ -152,11 +148,10 @@ export function Hero() {
       {/* ── Background ── */}
       <div className="absolute inset-0 z-0" style={{ background: "#030712" }}>
         <img
-          src="/images/publicimageshero-bg.jpg"
+          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80"
           alt="Technical Remote Support"
           className="w-full h-full object-cover mix-blend-luminosity scale-110"
           style={{ opacity: 0.18 }}
-          onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80"; }}
         />
 
         {/* Grid */}
@@ -272,7 +267,6 @@ export function Hero() {
               className="text-3xl md:text-5xl lg:text-[4rem] font-bold leading-none uppercase animate-gradient-x"
               style={{
                 letterSpacing: "0.04em",
-                fontFamily: "'Syne', sans-serif",
                 background: "linear-gradient(90deg, #A855F7, #FF6B35, #00D9C8, #A855F7)",
                 backgroundSize: "200%",
                 WebkitBackgroundClip: "text",
@@ -375,4 +369,4 @@ export function Hero() {
       </div>
     </section>
   );
-} 
+}
