@@ -9,7 +9,7 @@ const LICENSES = [
     subtitle: "Licencia Digital Permanente OEM / Retail",
     badge: "Permanente",
     icon: "🪟",
-    img: "images/products/windows_license.png",
+    img: `${import.meta.env.BASE_URL}images/products/windows_license.png`,
     accent: "from-blue-500/20 to-cyan-500/10",
     border: "border-blue-500/20",
   },
@@ -18,17 +18,17 @@ const LICENSES = [
     subtitle: "Cuentas institucionales y licencias de por vida",
     badge: "Vitalicia",
     icon: "📊",
-    img: "images/products/office_license.png",
+    img: `${import.meta.env.BASE_URL}images/products/office_license.png`,
     accent: "from-orange-500/20 to-red-500/10",
     border: "border-orange-500/20",
   },
 ];
 
 const HARDWARE = [
-  { title: "Laptops",    icon: Laptop,   img: "images/products/laptop.png"   },
-  { title: "PCs Gamer",  icon: Gamepad2, img: "images/products/gamer_pc.png" },
-  { title: "SSD / RAM",  icon: Cpu,      img: "images/products/hardware.png" },
-  { title: "Monitores",  icon: Monitor,  img: "images/products/monitor.png"  },
+  { title: "Laptops",    icon: Laptop,   img: `${import.meta.env.BASE_URL}images/products/laptop.png`   },
+  { title: "PCs Gamer",  icon: Gamepad2, img: `${import.meta.env.BASE_URL}images/products/gamer_pc.png` },
+  { title: "SSD / RAM",  icon: Cpu,      img: `${import.meta.env.BASE_URL}images/products/hardware.png` },
+  { title: "Monitores",  icon: Monitor,  img: `${import.meta.env.BASE_URL}images/products/monitor.png`  },
 ];
 
 // ── Section ──────────────────────────────────────────────────────────────────
